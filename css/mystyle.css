@@ -19,6 +19,39 @@ body{
     
 }
 
+#rectangle_two{
+    position: absolute;
+    width: 618px;
+    height: 4px;
+    left: 350px;
+    top: 158px;
+    margin-top: 10px;
+
+    background-color: #1B50B6;
+}
+
+#rectangle_three{
+    position: absolute;
+    width: 616px;
+    height: 1px;
+    left: 350px;
+    top: 444px;
+    margin-top: 20px;
+
+    background-color: #C4C4C4;
+}
+
+#rectangle_four{
+    position: absolute;
+    width: 616px;
+    height: 1px;
+    left: 350px;
+    top: 627px;
+    margin-top: 20px;
+
+    background-color: #C4C4C4;
+}
+
 h1{
     position: absolute;
     width: 364px;
@@ -35,18 +68,7 @@ h1{
     line-height: 37px;
 }
 
-#rectangle_two{
-    position: absolute;
-    width: 618px;
-    height: 4px;
-    left: 350px;
-    top: 158px;
-    margin-top: 10px;
-
-    background-color: #1B50B6;
-}
-
-h2{
+#math h2{
     position: absolute;
     width: 351px;
     height: 28px;
@@ -60,7 +82,38 @@ h2{
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
+}
 
+#history h2{
+    position: absolute;
+    width: 307px;
+    height: 28px;
+    left: 350px;
+    top: 834px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#geograph h2{
+    position: absolute;
+    width: 329px;
+    height: 28px;
+    left: 350px;
+    top: 1434px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 #question_one h3{
@@ -97,8 +150,6 @@ h2{
 
 }
 
-
-
 #question_three h3{
     position: absolute;
     width: 133px;
@@ -113,12 +164,171 @@ h2{
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+}
 
+#question_four h3{
+    position: absolute;
+    width: 214px;
+    height: 18px;
+    left: 350px;
+    top: 886px;
+
+    color: #222222;
+
+    /*font-family: 'Ubuntu';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#question_five h3{
+    position: absolute;
+    width: 214px;
+    height: 18px;
+    left: 350px;
+    top: 1069px;
+
+    color: #222222;
+
+    /*font-family: 'Ubuntu';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#question_six h3{
+    position: absolute;
+    width: 133px;
+    height: 18px;
+    left: 350px;
+    top: 1252px;
+
+    color: #222222;
+
+    /*font-family: 'Ubuntu';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#question_seven h3{
+    position: absolute;
+    width: 445px;
+    height: 18px;
+    left: 350px;
+    top: 1486px;
+
+    color: #222222;
+
+    /*font-family: 'Ubuntu';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#question_eight h3{
+    position: absolute;
+    width: 445px;
+    height: 18px;
+    left: 350px;
+    top: 1669px;
+
+    color: #222222;
+
+    /*font-family: 'Ubuntu';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#question_nine h3{
+    position: absolute;
+    width: 445px;
+    height: 18px;
+    left: 350px;
+    top: 1852px;
+
+    color: #222222;
+
+    /*font-family: 'Ubuntu';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 #radio_one{
     position: absolute;
     top: 319px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_two{
+    position: absolute;
+    top: 502px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_three{
+    position: absolute;
+    top: 685px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_four{
+    position: absolute;
+    top: 919px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_five{
+    position: absolute;
+    top: 1102px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_six{
+    position: absolute;
+    top: 1285px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_seven{
+    position: absolute;
+    top: 1519px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_eight{
+    position: absolute;
+    top: 1702px;
+    left: 353px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#radio_nine{
+    position: absolute;
+    top: 1885px;
     left: 353px;
     margin-top: 10px;
     margin-left: 2px;
