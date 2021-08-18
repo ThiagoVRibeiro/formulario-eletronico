@@ -378,3 +378,48 @@ h1{
     font-size: 16px;
     line-height: 18px;
 }
+
+#btn_submit{
+    position: absolute;
+    width: 235px;
+    height: 56px;
+    left: 843px;
+    top: 2042px;
+
+    background: #1B50B6;
+    border-radius: 8px;
+}
+
+#div_submit h3{
+    position: absolute;
+    width: 47px;
+    height: 18px;
+    left: 937px;
+    top: 2061px;
+    margin-top: 2px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+#div_cancel #cancel{
+    text-decoration: none;
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 706px;
+    top: 2061px;
+
+    color: #1B50B6;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
