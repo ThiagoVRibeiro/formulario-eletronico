@@ -12,8 +12,11 @@
 
     <title>Teste de Conhecimentos</title>
 </head>
-<body onload="montarGrafico(); mensagemResultado()">
+<body onload="lerAcertos(), montarGrafico(); mensagemResultado()">
     <div id="retangulo_cinco">
+        <div id="grafico">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
     <div id="mensagemResultado">
 
@@ -25,9 +28,7 @@
     <div id="rectangle_two">
     </div>
 
-    <div id="grafico">
-        <canvas id="myChart"></canvas>
-    </div>
+    
     
     <div id="mensagem_um">
         <h2>O teste vale 100 pontos, e a nota necessária é 70.</h2>

@@ -145,12 +145,12 @@ function montarGrafico(){
         label: 'Acertos',
         backgroundColor: 'rgba(27, 80, 182, 1)',
         borderColor: 'rgba(27, 80, 182, 1)',
-        data: [totalAcertosMatematica, totalAcertosHistoria, totalAcertosGeografia]
+        data: [mat, hist, 5]
         },{              
         label: 'Erros',
         backgroundColor: 'rgba(158, 186, 239, 1)',
         borderColor: 'rgba(158, 186, 239, 1)',
-        data: [totalErrosMatematica, totalErrosHistoria, totalErrosGeografia]
+        data: [4, 5, 6]
         
         }]      
         },
@@ -167,10 +167,81 @@ alert("Pontuacao Total: " + pontuacaoTotal);
 
 function mensagemResultado(){
     if(pontuacaoTotal > 6){
-    document.getElementById("mensagemResultado").innerHTML = "<h1>Aprovado! Você Tirou<h1>";
+    document.getElementById("mensagemResultado").innerHTML = "<h1>Aprovado! Você Tirou <h1>";
     }else if(pontuacaoTotal > 4 && pontuacaoTotal <6){
-        document.getElementById("mensagemResultado").innerHTML = "<h1>Recuperação! Você Tirou<h1>";
+        document.getElementById("mensagemResultado").innerHTML = "<h1>Recuperação! Você Tirou <h1>";
     }else{
-        document.getElementById("mensagemResultado").innerHTML = "<h1>Reprovado! Você Tirou<h1>";
+        document.getElementById("mensagemResultado").innerHTML = "<h1>Reprovado! Você Tirou <h1>";
     }
 }
+
+var armazenarAcertosMatematica = 0;
+var armazenarAcertosHistoria = 0;
+var armazenarAcertosGeografia = 0;
+var armazenarErrosMatematica = 0;
+var armazenarErrosHistoria = 0;
+var armazenarErrosGeografia = 0;
+
+var pegarAcertosMatematica = 0;
+var pegarAcertosHistoria = 0;
+var pegarAcertosGeografia = 0;
+var pegarErrosMatematica = 0;
+var pegarErrosHistoria = 0;
+var pegarErrosGeografia = 0;
+
+var mat = 0;
+var hist = 0;
+var geog = 0;
+
+function armazenarAcertos(){
+    var meuObj = {Matematica: totalAcertosMatematica, Historia: totalAcertosHistoria, Geografia: totalErrosGeografia};
+ 
+    localStorage.setItem(armazenarAcertosMatematica, JSON.stringify(meuObj));
+}
+
+function lerAcertos(){
+    pegarAcertosMatematica = JSON.parse(localStorage.getItem(armazenarAcertosMatematica));
+    mat = pegarAcertosMatematica.Matematica;
+    hist = pegarAcertosMatematica.Historia;    
+    alert("Armazenou: " + pegarAcertosMatematica.Matematica + "Armazenou: " + pegarAcertosMatematica.Historia);
+}
+
+/*Esse Trecho deu certo
+var armazenarAcertosMatematica = 0;
+var pegarAcertosMatematica = 0;
+
+function salvarAcertosMatematica(){    
+    localStorage.setItem(armazenarAcertosMatematica, totalAcertosMatematica);
+}
+
+function lerAcertosMatematica(){
+    pegarAcertosMatematica = localStorage.getItem(armazenarAcertosMatematica);    
+    alert("Armazenou: " + pegarAcertosMatematica);
+}
+*/
+
+/*
+var armazenarAcertosMatematica = 0;
+var armazenarAcertosHistoria = 0;
+var armazenarAcertosGeografia = 0;
+var armazenarErrosMatematica = 0;
+var armazenarErrosHistoria = 0;
+var armazenarErrosGeografia = 0;
+
+var pegarAcertosMatematica = 0;
+var pegarAcertosHistoria = 0;
+var pegarAcertosGeografia = 0;
+var pegarErrosMatematica = 0;
+var pegarErrosHistoria = 0;
+var pegarErrosGeografia = 0;
+
+
+function armazenarAcertosMatematica(){    
+    localStorage.setItem(armazenarAcertosMatematica, totalAcertosMatematica);
+}
+
+function lerAcertosMatematica(){
+    pegarAcertosMatematica = localStorage.getItem(armazenarAcertosMatematica);    
+    alert(pegarAcertosMatematica);
+}
+*/

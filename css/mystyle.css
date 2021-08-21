@@ -504,6 +504,8 @@ h1{
 #grafico{
     height: 530px;
     width: 530px;
+    margin-top: 530px;
+    margin-left: 150px;
 }
 
 #mensagemResultado h1{
