@@ -1,14 +1,5 @@
 function Resultado(){
     window.location.href = 'html/resultado.html';
-    function addElemento(){
-        var divNova = document.createElement("div");
-        var conteudoNovo = document.createTextNode("Olá, cumprimentos!");
-        divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
-      
-        // adiciona o novo elemento criado e seu conteúdo ao DOM
-        var divAtual = document.getElementById("div1");
-        document.body.insertBefore(divNova, divAtual);
-    }
 }
 
 
@@ -142,21 +133,20 @@ function montarGrafico(){
     data: {
         labels: ['Matemática', 'História', 'Geografia'],
         datasets: [{
-        label: 'Acertos',
-        backgroundColor: 'rgba(27, 80, 182, 1)',
-        borderColor: 'rgba(27, 80, 182, 1)',
-        data: [mat, hist, 5]
+            label: 'Acertos',
+            backgroundColor: 'rgba(27, 80, 182, 1)',
+            borderColor: 'rgba(27, 80, 182, 1)',
+            data: [pegarAcertosMatematica, pegarAcertosHistoria, pegarAcertosGeografia]
         },{              
-        label: 'Erros',
-        backgroundColor: 'rgba(158, 186, 239, 1)',
-        borderColor: 'rgba(158, 186, 239, 1)',
-        data: [4, 5, 6]
-        
-        }]      
+            label: 'Erros',
+            backgroundColor: 'rgba(158, 186, 239, 1)',
+            borderColor: 'rgba(158, 186, 239, 1)',
+            data: [pegarErrosMatematica, pegarErrosHistoria, pegarErrosGeografia]       
+            }]      
         },
         options:{
             onresize: true
-         }
+        }
     });
 }
 
@@ -166,82 +156,46 @@ alert("Pontuacao Total: " + pontuacaoTotal);
 }
 
 function mensagemResultado(){
-    if(pontuacaoTotal > 6){
-    document.getElementById("mensagemResultado").innerHTML = "<h1>Aprovado! Você Tirou <h1>";
-    }else if(pontuacaoTotal > 4 && pontuacaoTotal <6){
-        document.getElementById("mensagemResultado").innerHTML = "<h1>Recuperação! Você Tirou <h1>";
+    if(pontuacaoFinal >= 6){
+    document.getElementById("mensagemResultado").innerHTML = "<h1>Aprovado! Você Tirou <h1>"+ "<h2><\h2>" + pontuacaoFinal;
+    alert("valor no if" + pontuacaoFinal);
+    }else if(pontuacaoFinal >= 4 && pontuacaoFinal < 6){
+        document.getElementById("mensagemResultado").innerHTML = "<h1>Recuperação! Você Tirou <h1><br>" + "<h3><\h3>" + pontuacaoFinal;
+        alert("valor no elseif" + pontuacaoFinal);
     }else{
-        document.getElementById("mensagemResultado").innerHTML = "<h1>Reprovado! Você Tirou <h1>";
+        document.getElementById("mensagemResultado").innerHTML = "<h1>Reprovado! Você Tirou<h1><br>" + "<h4><\h4>" + pontuacaoFinal;
+        alert("valor no else" + pontuacaoFinal);
     }
 }
 
-var armazenarAcertosMatematica = 0;
-var armazenarAcertosHistoria = 0;
-var armazenarAcertosGeografia = 0;
-var armazenarErrosMatematica = 0;
-var armazenarErrosHistoria = 0;
-var armazenarErrosGeografia = 0;
-
+var valoresArmazenados = 0;
+var pegarValores = 0;
 var pegarAcertosMatematica = 0;
 var pegarAcertosHistoria = 0;
 var pegarAcertosGeografia = 0;
 var pegarErrosMatematica = 0;
 var pegarErrosHistoria = 0;
 var pegarErrosGeografia = 0;
+var pontuacaoFinal = 0;
 
-var mat = 0;
-var hist = 0;
-var geog = 0;
 
-function armazenarAcertos(){
-    var meuObj = {Matematica: totalAcertosMatematica, Historia: totalAcertosHistoria, Geografia: totalErrosGeografia};
+function armazenarValores(){
+    var meuObj = {acertosMatematica: totalAcertosMatematica, acertosHistoria: totalAcertosHistoria, acertosGeografia: totalAcertosGeografia,
+        errosMatematica: totalErrosMatematica, errosHistoria: totalErrosHistoria, errosGeografia: totalErrosGeografia,
+        totalGeral: pontuacaoTotal};
  
-    localStorage.setItem(armazenarAcertosMatematica, JSON.stringify(meuObj));
+    localStorage.setItem(valoresArmazenados, JSON.stringify(meuObj));
 }
 
-function lerAcertos(){
-    pegarAcertosMatematica = JSON.parse(localStorage.getItem(armazenarAcertosMatematica));
-    mat = pegarAcertosMatematica.Matematica;
-    hist = pegarAcertosMatematica.Historia;    
-    alert("Armazenou: " + pegarAcertosMatematica.Matematica + "Armazenou: " + pegarAcertosMatematica.Historia);
+function lerValores(){
+    pegarValores = JSON.parse(localStorage.getItem(valoresArmazenados));
+    pegarAcertosMatematica = pegarValores.acertosMatematica;
+    pegarAcertosHistoria = pegarValores.acertosHistoria;
+    pegarAcertosGeografia = pegarValores.acertosGeografia;
+    pegarErrosMatematica = pegarValores.errosMatematica;
+    pegarErrosHistoria = pegarValores.errosHistoria;
+    pegarErrosGeografia = pegarValores.errosGeografia;
+    pontuacaoFinal = pegarValores.totalGeral;
+
+    alert("Armazenou: " + pegarValores.acertosGeografia + "Armazenou: " + pegarValores.errosGeografia);
 }
-
-/*Esse Trecho deu certo
-var armazenarAcertosMatematica = 0;
-var pegarAcertosMatematica = 0;
-
-function salvarAcertosMatematica(){    
-    localStorage.setItem(armazenarAcertosMatematica, totalAcertosMatematica);
-}
-
-function lerAcertosMatematica(){
-    pegarAcertosMatematica = localStorage.getItem(armazenarAcertosMatematica);    
-    alert("Armazenou: " + pegarAcertosMatematica);
-}
-*/
-
-/*
-var armazenarAcertosMatematica = 0;
-var armazenarAcertosHistoria = 0;
-var armazenarAcertosGeografia = 0;
-var armazenarErrosMatematica = 0;
-var armazenarErrosHistoria = 0;
-var armazenarErrosGeografia = 0;
-
-var pegarAcertosMatematica = 0;
-var pegarAcertosHistoria = 0;
-var pegarAcertosGeografia = 0;
-var pegarErrosMatematica = 0;
-var pegarErrosHistoria = 0;
-var pegarErrosGeografia = 0;
-
-
-function armazenarAcertosMatematica(){    
-    localStorage.setItem(armazenarAcertosMatematica, totalAcertosMatematica);
-}
-
-function lerAcertosMatematica(){
-    pegarAcertosMatematica = localStorage.getItem(armazenarAcertosMatematica);    
-    alert(pegarAcertosMatematica);
-}
-*/

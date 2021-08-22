@@ -523,3 +523,51 @@ h1{
     font-size: 48px;
     line-height: 55px;
 }
+
+#mensagemResultado h2{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 840px;
+    top: 173px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#mensagemResultado h3{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 900px;
+    top: 163px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#mensagemResultado h4{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 858px;
+    top: 150px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
