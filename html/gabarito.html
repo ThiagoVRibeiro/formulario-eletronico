@@ -6,7 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' />
     
     <!--CSS-->
-    <link href="css/mystyle.css" rel="stylesheet">
+    <link href="../css/mystyle.css" rel="stylesheet">
 
     <title>Teste de Conhecimentos</title>
 </head>
@@ -30,7 +30,7 @@
         <h3>01. Qual é a média aritmética simples de 15, 48, 36?</h3>
         <form id="radio_um">
             <br>
-            <input type="radio" class="option_math_one" name="option" value="1">
+            <input type="radio" class="option_math_one" name="option" value="1" checked>
             <label id="lbl_um">33</label>
             <br><br>
             <input type="radio" class="option_math_one" name="option" value="2">
@@ -195,18 +195,12 @@
         </form>
     </div>
     
-    <div id="div_submit">
-        <button type="submit" id="btn_submit" name="btn_submit" onclick="apresentarResultado(), CalcularResultadoMatematica(); 
-        CalcularResultadoHistoria(); CalcularResultadoGeografia(); calcularPontuacao(); 
-        armazenarValores(); lerValores(); montarGrafico()"></button>
-        <h3>Enviar</h3>
-    </div>
 
-    <div id="div_cancel">
-        <a id="cancel" href="index.html">Cancelar</a>
+    <div id="div_voltar">
+        <a id="voltar" href="resultado.html">Voltar</a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js" ></script>
-    <script type="text/javascript" src="js/submit.js"></script>
+    <script type="text/javascript" src="../js/submit.js"></script>
 </body>
 </html>

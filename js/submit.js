@@ -1,7 +1,10 @@
-function Resultado(){
+function apresentarResultado(){
     window.location.href = 'html/resultado.html';
 }
 
+function apresentarGabarito(){
+    window.location.href = 'gabarito.html';
+}
 
 var totalAcertosMatematica = 0;
 var totalErrosMatematica = 0;
@@ -20,8 +23,17 @@ var totalErrosGeografia = 0;
 var resultadoGeografiaUm = 2;
 var resultadoGeografiaDois = 1;
 var resultadoGeografiaTres = 2;
-
 var pontuacaoTotal = 0;
+
+var valoresArmazenados = 0;
+var pegarValores = 0;
+var pegarAcertosMatematica = 0;
+var pegarAcertosHistoria = 0;
+var pegarAcertosGeografia = 0;
+var pegarErrosMatematica = 0;
+var pegarErrosHistoria = 0;
+var pegarErrosGeografia = 0;
+var pontuacaoFinal = 0;
 
 function CalcularResultadoMatematica(){
     var valorRadioUm = document.getElementsByClassName("option_math_one");  
@@ -55,7 +67,6 @@ function CalcularResultadoMatematica(){
             }
         }
     } 
-    alert("Pontuacao Total Matematica: " + totalAcertosMatematica + "Total erradas: " + totalErrosMatematica);
 }
 
 function CalcularResultadoHistoria(){    
@@ -89,7 +100,6 @@ function CalcularResultadoHistoria(){
             }
         }
     } 
-    alert("Pontuacao Total Historia: " + totalAcertosHistoria);
 }
 
 function CalcularResultadoGeografia(){    
@@ -123,7 +133,6 @@ function CalcularResultadoGeografia(){
             }
         }
     } 
-    alert("Pontuacao Total Geografia: " + totalAcertosGeografia);
 }
 
 function montarGrafico(){
@@ -152,32 +161,17 @@ function montarGrafico(){
 
 function calcularPontuacao(){
     pontuacaoTotal = totalAcertosMatematica + totalAcertosHistoria + totalAcertosGeografia;
-alert("Pontuacao Total: " + pontuacaoTotal);
 }
 
 function mensagemResultado(){
     if(pontuacaoFinal >= 6){
     document.getElementById("mensagemResultado").innerHTML = "<h1>Aprovado! Você Tirou <h1>"+ "<h2><\h2>" + pontuacaoFinal;
-    alert("valor no if" + pontuacaoFinal);
     }else if(pontuacaoFinal >= 4 && pontuacaoFinal < 6){
         document.getElementById("mensagemResultado").innerHTML = "<h1>Recuperação! Você Tirou <h1><br>" + "<h3><\h3>" + pontuacaoFinal;
-        alert("valor no elseif" + pontuacaoFinal);
     }else{
         document.getElementById("mensagemResultado").innerHTML = "<h1>Reprovado! Você Tirou<h1><br>" + "<h4><\h4>" + pontuacaoFinal;
-        alert("valor no else" + pontuacaoFinal);
     }
 }
-
-var valoresArmazenados = 0;
-var pegarValores = 0;
-var pegarAcertosMatematica = 0;
-var pegarAcertosHistoria = 0;
-var pegarAcertosGeografia = 0;
-var pegarErrosMatematica = 0;
-var pegarErrosHistoria = 0;
-var pegarErrosGeografia = 0;
-var pontuacaoFinal = 0;
-
 
 function armazenarValores(){
     var meuObj = {acertosMatematica: totalAcertosMatematica, acertosHistoria: totalAcertosHistoria, acertosGeografia: totalAcertosGeografia,
@@ -196,6 +190,4 @@ function lerValores(){
     pegarErrosHistoria = pegarValores.errosHistoria;
     pegarErrosGeografia = pegarValores.errosGeografia;
     pontuacaoFinal = pegarValores.totalGeral;
-
-    alert("Armazenou: " + pegarValores.acertosGeografia + "Armazenou: " + pegarValores.errosGeografia);
 }
