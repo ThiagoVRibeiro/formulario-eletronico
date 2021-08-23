@@ -631,3 +631,83 @@ h1{
     font-size: 48px;
     line-height: 55px;
 }
+
+#resposta_um h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 235px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dois_um h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 235px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dois_dois h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 270px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dois_tres h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 305px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_tres h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 235px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}

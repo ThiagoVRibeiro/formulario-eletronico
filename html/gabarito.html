@@ -10,7 +10,7 @@
 
     <title>Teste de Conhecimentos</title>
 </head>
-<body>
+<body onload="lerValores(), gabaritoMatematica()">
     <div id="retangulo">
     </div>
 
@@ -27,18 +27,13 @@
     </div>
     
     <div id="questao_um">
-        <h3>01. Qual é a média aritmética simples de 15, 48, 36?</h3>
-        <form id="radio_um">
-            <br>
-            <input type="radio" class="option_math_one" name="option" value="1" checked>
-            <label id="lbl_um">33</label>
-            <br><br>
-            <input type="radio" class="option_math_one" name="option" value="2">
-            <label id="lbl_dois">54</label>
-            <br><br>
-            <input type="radio" class="option_math_one" name="option" value="3">
-            <label id="lbl_tres">99</label>
-        </form>
+        <h3>01. Qual é a média aritmética simples de 15, 48, 36?</h3>        
+            <div id="resposta_um"></div>
+            <div id="resposta_dois"></div> 
+            <div id="resposta_tres"></div>      
+            <div id="resposta_dois_um"></div>
+            <div id="resposta_dois_dois"></div>
+            <div id="resposta_dois_tres"></div>
     </div>
 
     <div id="retangulo_tres">
@@ -201,6 +196,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js" ></script>
-    <script type="text/javascript" src="../js/submit.js"></script>
+    <script src="../js/submit.js"></script>
+    <script src="../js/gabarito.js"></script>
 </body>
 </html>

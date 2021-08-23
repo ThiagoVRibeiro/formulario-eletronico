@@ -35,6 +35,9 @@ var pegarErrosHistoria = 0;
 var pegarErrosGeografia = 0;
 var pontuacaoFinal = 0;
 
+var erroRespostaUm = 0;
+var pegarErroUm = 0;
+
 function CalcularResultadoMatematica(){
     var valorRadioUm = document.getElementsByClassName("option_math_one");  
     for(var i = 0; i < valorRadioUm.length; i++){
@@ -43,6 +46,7 @@ function CalcularResultadoMatematica(){
             	totalAcertosMatematica = totalAcertosMatematica + 1;            
             }else{
                 totalErrosMatematica = totalErrosMatematica + 1;
+                erroRespostaUm = valorRadioUm[i].value;
             }
         }
     } 
@@ -176,7 +180,7 @@ function mensagemResultado(){
 function armazenarValores(){
     var meuObj = {acertosMatematica: totalAcertosMatematica, acertosHistoria: totalAcertosHistoria, acertosGeografia: totalAcertosGeografia,
         errosMatematica: totalErrosMatematica, errosHistoria: totalErrosHistoria, errosGeografia: totalErrosGeografia,
-        totalGeral: pontuacaoTotal};
+        totalGeral: pontuacaoTotal, erroUm: erroRespostaUm};
  
     localStorage.setItem(valoresArmazenados, JSON.stringify(meuObj));
 }
@@ -190,4 +194,5 @@ function lerValores(){
     pegarErrosHistoria = pegarValores.errosHistoria;
     pegarErrosGeografia = pegarValores.errosGeografia;
     pontuacaoFinal = pegarValores.totalGeral;
+    pegarErroUm = pegarValores.erroUm;
 }
