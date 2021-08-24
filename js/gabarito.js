@@ -124,9 +124,4 @@ function montarGabarito(){
         document.getElementById("resposta_vinte_seis").innerHTML = "<H1>Palmas</h1>";
         document.getElementById("resposta_vinte_sete").innerHTML = "<H1>Teresina</h1>";
     }
-
-
 }
-
-/*document.getElementById("mensagemResultado").innerHTML = 
-"<h1>Aprovado! Você Tirou <h1>"+ "<h2><\h2>" + pontuacaoFinal; */
