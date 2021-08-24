@@ -1,0 +1,734 @@
+/*Questão Um*/
+
+#resposta_um h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 235px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dois_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 270px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dois h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 270px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Dois*/
+
+#resposta_tres_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 305px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_tres h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 305px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_quatro h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 415px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_cinco_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 450px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_cinco h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 450px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_seis_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 485px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_seis h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 485px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Tres*/
+
+#resposta_sete h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 600px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_sete_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 600px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_oito_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 635px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_oito h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 635px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_nove h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 670px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Quatro*/
+
+#resposta_dez h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 840px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_onze_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 875px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_onze h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 875px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_doze_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 910px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_doze h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 910px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Cinco*/
+
+#resposta_treze_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1020px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_treze h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1020px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_quatorze h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1055px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_quinze_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1090px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_quinze h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1090px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Seis*/
+#resposta_dezesseis h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1200px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dezesseis_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1200px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dezessete_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1235px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dezessete h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1235px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dezoito h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1275px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Sete*/
+#resposta_dezenove_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1430px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_dezenove h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1430px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1465px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_um_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1500px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_um h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1500px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Oito*/
+
+#resposta_vinte_dois h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1620px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_tres_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1655px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_tres h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1655px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_quatro_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1690px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_quatro h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1690px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Questão Nove*/
+#resposta_vinte_cinco_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1800px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_cinco h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1800px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_seis h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1835px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_sete_errada h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1875px;
+
+    color: #fa0606;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#resposta_vinte_sete h1{
+    position: absolute;
+    width: 700px;
+    height: 18px;
+    left: 375px;
+    margin-top: 1875px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}

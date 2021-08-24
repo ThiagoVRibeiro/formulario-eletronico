@@ -37,6 +37,22 @@ var pontuacaoFinal = 0;
 
 var erroRespostaUm = 0;
 var pegarErroUm = 0;
+var erroRespostaDois = 0;
+var pegarErroDois = 0;
+var erroRespostaTres = 0;
+var pegarErroTres = 0;
+var erroRespostaQuatro = 0;
+var pegarErroQuatro = 0;
+var erroRespostaCinco = 0;
+var pegarErroCinco = 0;
+var erroRespostaSeis = 0;
+var pegarErroSeis = 0;
+var erroRespostaSete = 0;
+var pegarErroSete = 0;
+var erroRespostaOito = 0;
+var pegarErroOito = 0;
+var erroRespostaNove = 0;
+var pegarErroNove = 0;
 
 function CalcularResultadoMatematica(){
     var valorRadioUm = document.getElementsByClassName("option_math_one");  
@@ -57,6 +73,7 @@ function CalcularResultadoMatematica(){
             	totalAcertosMatematica = totalAcertosMatematica + 1;            
             }else{
                 totalErrosMatematica = totalErrosMatematica + 1;
+                erroRespostaDois = valorRadioUm[i].value;
             }
         }
     
@@ -68,6 +85,7 @@ function CalcularResultadoMatematica(){
             	totalAcertosMatematica = totalAcertosMatematica + 1;            
             }else{
                 totalErrosMatematica = totalErrosMatematica + 1;
+                erroRespostaTres = valorRadioUm[i].value;
             }
         }
     } 
@@ -81,6 +99,7 @@ function CalcularResultadoHistoria(){
             	totalAcertosHistoria = totalAcertosHistoria + 1;            
             }else{
                 totalErrosHistoria = totalErrosHistoria + 1;
+                erroRespostaQuatro = valorRadioUm[i].value;
             }
         }
     } 
@@ -91,6 +110,7 @@ function CalcularResultadoHistoria(){
             	totalAcertosHistoria = totalAcertosHistoria + 1;            
             }else{
                 totalErrosHistoria = totalErrosHistoria + 1;
+                erroRespostaCinco = valorRadioUm[i].value;
             }
         }
     } 
@@ -101,6 +121,7 @@ function CalcularResultadoHistoria(){
             	totalAcertosHistoria = totalAcertosHistoria + 1;            
             }else{
                 totalErrosHistoria = totalErrosHistoria + 1;
+                erroRespostaSeis = valorRadioUm[i].value;
             }
         }
     } 
@@ -114,6 +135,7 @@ function CalcularResultadoGeografia(){
             	totalAcertosGeografia = totalAcertosGeografia + 1;            
             }else{
                 totalErrosGeografia = totalErrosGeografia + 1;
+                erroRespostaSete = valorRadioUm[i].value;
             }
         }
     } 
@@ -124,6 +146,7 @@ function CalcularResultadoGeografia(){
             	totalAcertosGeografia = totalAcertosGeografia + 1;            
             }else{
                 totalErrosGeografia = totalErrosGeografia + 1;
+                erroRespostaOito = valorRadioUm[i].value;
             }
         }
     } 
@@ -134,6 +157,7 @@ function CalcularResultadoGeografia(){
             	totalAcertosGeografia = totalAcertosGeografia + 1;            
             }else{
                 totalErrosGeografia = totalErrosGeografia + 1;
+                erroRespostaNove = valorRadioUm[i].value;
             }
         }
     } 
@@ -180,7 +204,9 @@ function mensagemResultado(){
 function armazenarValores(){
     var meuObj = {acertosMatematica: totalAcertosMatematica, acertosHistoria: totalAcertosHistoria, acertosGeografia: totalAcertosGeografia,
         errosMatematica: totalErrosMatematica, errosHistoria: totalErrosHistoria, errosGeografia: totalErrosGeografia,
-        totalGeral: pontuacaoTotal, erroUm: erroRespostaUm};
+        totalGeral: pontuacaoTotal, erroUm: erroRespostaUm, erroDois: erroRespostaDois, erroTres: erroRespostaTres,
+        erroQuatro: erroRespostaQuatro, erroCinco: erroRespostaCinco, erroSeis: erroRespostaSeis, erroSete: erroRespostaSete,
+        erroOito: erroRespostaOito, erroNove: erroRespostaNove}
  
     localStorage.setItem(valoresArmazenados, JSON.stringify(meuObj));
 }
@@ -195,4 +221,12 @@ function lerValores(){
     pegarErrosGeografia = pegarValores.errosGeografia;
     pontuacaoFinal = pegarValores.totalGeral;
     pegarErroUm = pegarValores.erroUm;
+    pegarErroDois = pegarValores.erroDois;
+    pegarErroTres = pegarValores.erroTres;
+    pegarErroQuatro = pegarValores.erroQuatro;
+    pegarErroCinco = pegarValores.erroCinco;
+    pegarErroSeis = pegarValores.erroSeis;
+    pegarErroSete = pegarValores.erroSete;
+    pegarErroOito = pegarValores.erroOito;
+    pegarErroNove = pegarValores.erroNove;
 }
