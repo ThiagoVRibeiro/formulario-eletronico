@@ -1,8 +1,4 @@
-function testar(){
-    alert("VAlor Erro" + pegarErroUm);
-}
-
-function gabaritoMatematica(){
+function montarGabarito(){
     if(pegarErroUm == 2){
         document.getElementById("resposta_um").innerHTML = "<H1>33</h1>";
         document.getElementById("resposta_dois_errada").innerHTML = "<H1>54</h1>";

@@ -1,0 +1,182 @@
+body{
+    position: absolute;
+    width: 1440px;
+    height: 1249px;
+    left: 0px;
+    top: 0px;
+    overflow-y: scroll;
+
+    background-color: #F0F0F0;
+}
+
+#retangulo_dois{
+    position: absolute;
+    width: 618px;
+    height: 4px;
+    left: 350px;
+    top: 158px;
+    margin-top: 10px;
+
+    background-color: #1B50B6;
+}
+
+#retangulo_cinco{
+    position: absolute;
+    width: 860px;
+    height: 1129px;
+    left: 290px;
+    top: 60px;
+
+    background: #FFFFFF;
+
+    border-radius: 12px;
+}
+
+h1{
+    position: absolute;
+    width: 364px;
+    height: 37px;
+    left: 350px;
+    top: 111px;
+
+    color: #1B50B6;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+#grafico{
+    height: 530px;
+    width: 530px;
+    margin-top: 530px;
+    margin-left: 150px;
+}
+
+#mensagemResultado h1{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 350px;
+    top: 180px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#mensagemResultado h2{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 840px;
+    top: 173px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#mensagemResultado h3{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 900px;
+    top: 163px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#mensagemResultado h4{
+    position: absolute;
+    width: 541px;
+    height: 55px;
+    left: 858px;
+    top: 150px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#mensagem_um h2{
+    position: absolute;
+    width: 546px;
+    height: 28px;
+    left: 350px;
+    top: 270px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#mensagem_dois h2{
+    position: absolute;
+    width: 469px;
+    height: 18px;
+    left: 486px;
+    top: 1111px;
+
+    color: #222222;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#btn_gabarito{
+    position: absolute;
+    width: 235px;
+    height: 56px;
+    left: 603px;
+    top: 983px;
+
+    background: #FFFFFF;
+    border: 1px solid #1B50B6;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#gabarito h3{
+    position: absolute;
+    width: 95px;
+    height: 18px;
+    left: 673px;
+    top: 1002px;
+    margin-top: 2px;
+
+    color: #1B50B6;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
